@@ -1,0 +1,89 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $font;
+}
+
+.header__inner {
+  background-color: $color-dark;
+  padding: 25px 0;
+}
+
+.header__title {
+  color: $color-light;
+  text-align: center;
+}
+
+.game__inner {
+  text-align: center;
+}
+
+.game__score-board {
+  position: relative;
+  width: 350px;
+  font-size: 26px;
+  border-radius: 5px;
+  margin: 35px auto;
+  padding: 25px 15px;
+}
+
+#userX-label {
+  position: absolute;
+  top: -15px;
+  left: 100px;
+}
+
+#userO-label {
+  position: absolute;
+  top: -15px;
+  left: 200px;
+}
+
+.game__status {
+  color: $color-dark;
+}
+
+.game__tictactoe {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+
+  width: 300px;
+  margin: 50px auto;
+}
+
+.game__cell {
+  font-family: $font-cell;
+  font-size: 60px;
+  color: $color-dark;
+  width: 100px;
+  height: 100px;
+  border: 1px solid $color-dark;
+  box-shadow: 0 0 0 1px $color-dark;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+.game__btn-restart,
+.game__btn-clear {
+  background-color: $color-dark;
+  color: $color-light;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.game__btn-restart:hover,
+.game__btn-clear:hover {
+  background-color: $color-light;
+  color: $color-dark;
+  border: 2px solid $color-dark;
+}

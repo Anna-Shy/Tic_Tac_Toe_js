@@ -1,0 +1,92 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Asap", sans-serif;
+}
+
+.header__inner {
+  background-color: #1f3241;
+  padding: 25px 0;
+}
+
+.header__title {
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.game__inner {
+  text-align: center;
+}
+
+.game__score-board {
+  position: relative;
+  width: 350px;
+  font-size: 26px;
+  border-radius: 5px;
+  margin: 35px auto;
+  padding: 25px 15px;
+}
+
+#userX-label {
+  position: absolute;
+  top: -15px;
+  left: 100px;
+}
+
+#userO-label {
+  position: absolute;
+  top: -15px;
+  left: 200px;
+}
+
+.game__status {
+  color: #1f3241;
+}
+
+.game__tictactoe {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 300px;
+  margin: 50px auto;
+}
+
+.game__cell {
+  font-family: "Permanent Marker", cursive;
+  font-size: 60px;
+  color: #1f3241;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #1f3241;
+  -webkit-box-shadow: 0 0 0 1px #1f3241;
+  box-shadow: 0 0 0 1px #1f3241;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+.game__btn-restart,
+.game__btn-clear {
+  background-color: #1f3241;
+  color: #f5f5f5;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.game__btn-restart:hover,
+.game__btn-clear:hover {
+  background-color: #f5f5f5;
+  color: #1f3241;
+  border: 2px solid #1f3241;
+}
+/*# sourceMappingURL=style.css.map */
