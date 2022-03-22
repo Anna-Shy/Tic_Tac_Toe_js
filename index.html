@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tic Tac Toe</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+
+      <div class="header__inner">
+        <h1 class="header__title">Tic Tac Toe</h1>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="game">
+      <div class="container">
+
+        <div class="game__inner">
+          
+          <div class="game__score-board">
+            <p id="userX-label" class="game__badge">user X</p>
+            <p id="userO-label" class="game__badge">ures O</p>
+            <span id="userX-score">0</span>:<span id="userO-score">0</span>
+          </div>
+          
+          <h2 class="game__status">Good luck!</h2>
+
+          <div class="game__tictactoe">
+            <div data-cell-index="0" class="game__cell"></div>
+            <div data-cell-index="1" class="game__cell"></div>
+            <div data-cell-index="2" class="game__cell"></div>
+            <div data-cell-index="3" class="game__cell"></div>
+            <div data-cell-index="4" class="game__cell"></div>
+            <div data-cell-index="5" class="game__cell"></div>
+            <div data-cell-index="6" class="game__cell"></div>
+            <div data-cell-index="7" class="game__cell"></div>
+            <div data-cell-index="8" class="game__cell"></div>
+          </div>
+
+          <button class="game__btn-restart">New Game</button>
+          <button class="game__btn-clear">Clear Game</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
